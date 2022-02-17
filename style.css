@@ -1,0 +1,238 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root{
+    font-size: 62.5%;
+    word-spacing: 0.4rem;
+}
+
+body{
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    color: black;
+}
+
+
+h1, h2, h3 h4{
+    font-family: 'Rozha One', serif;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+a{
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+}
+
+.botton, .hero-button-book, .hero-button-services{
+    font-size: .85rem;
+    padding: 1.3em 2.3em;
+    text-align: center;
+}
+
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+.container-header{
+    background: rgb(223, 223, 223);
+    z-index: 100;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 125rem;
+    min-height: 4rem;
+    padding: .5rem 6rem;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.logo{
+    width: 5rem;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+    list-style: none;
+}
+
+.navIcons{
+    width: 2rem;
+}
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+
+main{
+    background-image: url(img/hero-v2.jpg);
+    background-size: cover;
+    border-radius: 0.4rem 0.4rem 11rem .4rem;
+    transform: rotate(10deg) scale(1.2) translate(-5rem, -4rem);
+    border: 2px solid rgb(223, 223, 223);
+    box-shadow: 3px 6px 6px rgb(223, 223, 223);
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    padding: 0 2rem;
+    min-height: 65rem;
+}
+
+.hero{
+    padding: 10% 12%;
+    transform: rotate(-10deg) scale(1) translate(5rem, 10rem);
+}
+
+h1{
+    color: white;
+    font-size: 6rem;
+    margin: -.1em 0;
+}
+
+.hero h4{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.hero-button-services{
+    background: black;
+    color: white;
+}
+
+/******************************************
+/* COUPON
+/*******************************************/
+.coupon{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    max-width: 23rem;
+    color: white;
+    padding: 4em 2em;
+    margin-top: 5em;
+    display: absolute;
+    z-index: 10;
+    transform: translate(10.5rem, -24rem);
+}
+
+.discount{
+    /* display: inline; */
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+
+.discount b{
+    font-family: 'Rozha One', serif;
+    font-size: 3rem;
+}
+
+.hero-button-book{
+    background: white;
+    padding: 1em 2em;
+    width: 60%;
+}
+
+/******************************************
+/* SERVICES
+/*******************************************/
+.container-services{
+    max-width: 85rem;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    column-gap: 8em;
+    margin: -9rem 0 6rem 0;
+}
+
+.col{
+    text-align: center;
+}
+
+.col img{
+    max-width: 80%;
+}
+
+/******************************************
+/* ABOUT
+/*******************************************/
+.container-about{
+    max-width: 100%;
+    background: rgba(240, 239, 239, 0.856);
+}
+.about{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6rem 3rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-left{
+    width: 40%;
+}
+
+.about-left p{
+    margin-bottom: 3rem:
+}
+
+.about-right img{
+    width: 40rem;
+}
+
+.about-left h2{
+    font-size: 4rem;
+}
+
+.about-left .botton{
+    background: black;
+    color: white;
+}
+
+/******************************************
+/* MEDIA QUARIES
+/*******************************************/
+@media (min-width: 1430px){
+    
+}
